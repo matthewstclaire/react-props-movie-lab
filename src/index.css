@@ -1,4 +1,6 @@
-body, html, #root {
+body,
+html,
+#root {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -8,10 +10,11 @@ body, html, #root {
 }
 
 #root {
-  background-image: url("./assets/patterns/cheap_diagonal_fabric.png");
+  background-image: url('./assets/patterns/cheap_diagonal_fabric.png');
 }
 
-#root, #movie-showcase {
+#root,
+#movie-showcase {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,21 +31,20 @@ body, html, #root {
   width: 200px;
   height: 200px;
   margin: 5px;
-  transition: transform 1s;
+  transition: transform 0.3s;
   transform-style: preserve-3d;
 }
 
 .movie-card:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 .movie-card:active {
   transform: rotateY(180deg) scale(1.05);
 }
 
-
-
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
   height: inherit;
   width: inherit;
@@ -55,7 +57,6 @@ body, html, #root {
   transition-duration: 1s;
   box-shadow: 5px 5px 10px;
   box-shadow: 5px 5px 10px rgb(55, 55, 55, 0.85);
-  
 }
 
 .card-front:hover {
@@ -63,7 +64,7 @@ body, html, #root {
 }
 
 .card-back {
-  background-image: url("./assets/patterns/cork-wallet.png");
+  background-image: url('./assets/patterns/cork-wallet.png');
   transform: rotateY(180deg);
   box-shadow: 5px 5px 10px rgb(55, 55, 55, 0.85);
   text-align: center;
@@ -82,7 +83,7 @@ span {
 }
 
 .zero {
-  background: url("./assets/stars/stars.png") 0 0;
+  background: url('./assets/stars/stars.png') 0 0;
   width: 148px;
   height: 33px;
 }
